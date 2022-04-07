@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .navbar {
+            background-color: red;
+            height: 41px;
+        }
+        .navbar ul{
+            padding-right: 12px;
+        }
+        .navbar ul li {
+            float: right;
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar ul li:hover {
+            background-color: rgb(235, 45, 45);
+        } 
+        .main{
+            height: 360px;
+            background-color: #1d1f20;
+        }
+        .content-container{
+            float: left;
+            text-align: center;
+            width: 60%;
+            padding-top: 73px;
+            font-size:x-large;
+            word-spacing: 13px;
+        }
+        .image-container{
+            float: right;
+            padding: 9px;
+         
+        }
+        .form-body{
+            background-color: #161e30;
+            height: 450px;
+            text-align: center;
+            color: white;
+            padding: 16px;
+        }
+       .line{
+            background-color:red;
+            height: 3px;
+            margin-bottom: 17px;
+        }
+        .footer{
+            background-color: #101314;
+            height: 54px;
+            text-align: center;
+            color: white;
+        }
+        form{
+            padding-top: 40px;
+            height: 12px;
+        }
+       
+        table{
+            border: 3px outset rgb(87, 83, 46);
+            
+        }
+        td{
+            border: 2px inset #242e38;
+            background-color: #0da285;
+            height: 30px;
+        } 
+        input{
+            height: 20px;
+            
+        }
+       label{
+           padding-right: 16px;
+       }
+        button{
+            width: 49%;
+            padding-left: 12px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+          
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="content-container">
+            <h1 style="color: white;">Hey i am Mimic</h1>
+            <p style="color: #640808;"><b><em>a web developer</em></b></p>
+        </div>
+        <div class="image-container">
+            <img src="https://media.istockphoto.com/photos/millennial-male-team-leader-organize-virtual-workshop-with-employees-picture-id1300972574?b=1&k=20&m=1300972574&s=170667a&w=0&h=2nBGC7tr0kWIU8zRQ3dMg-C5JLo9H2sNUuDjQ5mlYfo=" alt="men's image">
+        </div>
+    </div>
+    <div class="form-body">
+      <h2>Contact Form</h2>
+      <hr>
+        <!-- <p>_______________________________________________________________</p> -->
+        <center>
+        <form>
+            <table style="width: 40%; height: 300px;">
+                <tr>
+                    <td>
+                        <label for="name">Enter Name</label>
+
+                    </td>
+                    <td>
+                        <input type="text" id="name" size="48">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Enter Password</label>
+
+                    </td>
+                    <td>
+                        <input type="password" id="password" size="48">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sports">Select Game</label>
+
+                    </td>
+                    <td>
+                    
+                            <input type="checkbox" id="hockey" name="hockey" value="hockey">
+                            <label for="hockey">Hockey</label><br>
+                            <input type="checkbox" id="football" name="football" value="football">
+                            <label for="football">Football</label><br> 
+                            <input type="checkbox" id="badmintion" name="badmintion" value="badmintion">
+                            <label for="badmintion">Badmintion</label><br>
+                            <input type="checkbox" id="cricket" name="cricket" value="cricket">
+                            <label for="cricket">Cricket</label><br>
+                            <input type="checkbox" id="volleyboll" name="volleyboll" value="volleyboll">
+                            <label for="volleyboll">Volleyboll</label>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender</label>
+
+                    </td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    </td>                </tr>
+                <tr>
+                    <td>Select ur age</td>
+                   <td><select name="age" id="age">
+                       <option value="select" disabled selected>Select</option>
+                       <option value="10-20">10-20</option>
+                       <option value="20-30">20-30</option>
+                       <option value="30-40">30-40</option>
+                       <option value="40-50">40-50</option>
+                       <option value="50-60">50-60</option>
+                       <option value="60-70">60-70</option>
+                   </select></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="photo">Select Photo</label>
+                    </td>
+                    <td>
+                        <input type="file" id="photo" name="photo" required>
+                    </td>
+                </tr>
+         
+                <tr>
+                    <td colspan="2">
+                        <button > Reset</button>
+                        <button >Submit Form</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+    </div>
+   <footer class="footer">
+        <div class="line"></div>
+        <p>&copy; Created For MAIMT</p>
+    </footer>   
+</body>
+
+</html>
